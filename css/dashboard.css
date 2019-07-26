@@ -34,6 +34,11 @@ header p {
   display: none;
 }
 
+header a {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 ul {
   margin-top: 27px;
   list-style: none;
@@ -54,14 +59,22 @@ ul {
     'main';
 }
 
+.widgets {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 0;
+  grid-template-areas:
+  'traffic traffic'
+  'daily-traffic mobile-users'
+  'social-stats social-stats'
+  'new-members recent-activity';
+}
+
 .avatar {
   border-radius: 50%;
   height: 35px;
-}
-
-header a {
-  margin-top: auto;
-  margin-bottom: auto;
 }
 
 .alert-icon {
@@ -80,6 +93,33 @@ header a {
   opacity: 1;
   transition: .3s;
 }
+
+.traffic-chart {
+  grid-area: traffic;
+}
+
+.daily-traffic {
+  grid-area: daily-traffic;
+}
+
+.mobile-users {
+  grid-area: mobile-users;
+}
+
+.social-stats {
+  grid-area: social-stats;
+}
+
+.new-members {
+  grid-area: new-members;
+}
+
+.recent-activity {
+  grid-area: recent-activity;
+}
+
+
+/*---MEDIA QUERIES ---*/
 
 @media (min-width: 768px) {
   .grid {
