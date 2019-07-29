@@ -1,0 +1,26 @@
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 27px;
+    @include mq {
+        flex-direction: column;
+        margin-top: 0; 
+    }
+}
+
+nav li {
+    @include mq {
+        margin-top: 25px;
+    }
+    
+}
+
+.icon--nav {
+    opacity: 0.5;
+    &:hover {
+        opacity: 1;
+        transition: .5s;
+    }
+}

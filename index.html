@@ -3,67 +3,129 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.css" integrity="sha256-IvM9nJf/b5l2RoebiFno92E5ONttVyaEEsdemDC6iQA=" crossorigin="anonymous" />
     <title>My Dashboard</title>
   </head>
   <body>
     <div class="grid">
       <header>
-        <h1><span>Your</span>App&#153;</h1>
+        <h1 class='logo'><span>Your</span>App&#153;</h1>
         <a href="#">
-          <img class="alert-icon" src="icons/icon-bell.svg" alt="alert icon">
+          <img class="icon--alert" src="icons/icon-bell.svg" alt="alert icon">
         </a>
         <a href="#">
-          <img class="avatar" src="images/member-1.jpg" alt="Avatar Pic">
+          <img class="img--avatar" src="images/member-1.jpg" alt="Avatar Pic">
         </a>
-        <p>John Sullivan</p>
+        <p class='username'>John Sullivan</p>
       </header>
       <nav>
         <ul>
           <li>
             <a href="#">
-              <img class="nav-icon" src="icons/icon-dashboard.svg" alt="dashboard icon">
+              <img class="icon--nav" src="icons/icon-dashboard.svg" alt="dashboard icon">
             </a>
           </li>
           <li>
             <a href="#">
-              <img class="nav-icon" src="icons/icon-members.svg" alt="members icon">
+              <img class="icon--nav" src="icons/icon-members.svg" alt="members icon">
             </a>
           </li>
           <li>
             <a href="#">
-              <img class="nav-icon" src="icons/icon-visits.svg" alt="visits icon">
+              <img class="icon--nav" src="icons/icon-visits.svg" alt="visits icon">
             </a>
           </li>
           <li>
             <a href="#">
-              <img class="nav-icon" src="icons/icon-settings.svg" alt="settings icon">
+              <img class="icon--nav" src="icons/icon-settings.svg" alt="settings icon">
             </a>
           </li>
         </ul>
       </nav>
-      <main class="widgets">
-        <div class="traffic-chart">
-          <canvas id="traffic"></canvas>
+      <main>
+        <div class='dashboard'>
+          <h2 class='headline--primary'>Dashboard</h2>
+          <input type="search" name="search" placeholder="Search...">
         </div>
-        <div class="daily-traffic">
-          <canvas id="daily-traffic"></canvas>
+
+        <div class='widgets'>
+          <div class="traffic">
+            <div class='widget--header'>
+              <h2 class='headline--secondary'>TRAFFIC</h2>
+              <ul>
+                <li><a href='#'>Hourly</a></li>
+                <li><a href='#'>Daily</a></li>
+                <li><a href='#'>Weekly</a></li>
+                <li><a href='#'>Monthly</a></li>
+              </ul>
+            </div>
+            <div class="chart-container">
+              <canvas id="traffic"></canvas>
+            </div>
         </div>
-        <div class="mobile-users">
-          <canvas id="mobile-users"></canvas>
+
+          <div class="daily">
+              <h2 class='headline--secondary'>DAILY TRAFFIC</h2>
+              <div class='chart-container'>
+                <canvas id="daily-traffic"></canvas>
+              </div>
+          </div>
+
+          <div class="mobile">
+              <h2 class='headline--secondary'>MOBILE USERS</h2>
+              <div class='chart-container'>
+                <canvas id="mobile-users"></canvas>
+              </div>
+          </div>
+
+          <div class="social">
+              <h2 class='headline--secondary'>SOCIAL STATS</h2>
+              <ul class='social--list'>
+                <li class='social--list__items'>
+                  <img class='icon--social' src="icons/icon-twitter.svg" alt="twitter-icon">
+                  <p>Twitter</p>
+                  <p>10,345</p>
+                </li>
+                <li class='social--list__items'>
+                  <img class='icon--social' src="icons/icon-facebook.svg" alt="facebook-icon">
+                  <p>Facebook</p>
+                  <p>8,739</p>
+                </li>
+                <li class='social--list__items'>
+                  <img class='icon--social' src="icons/icon-google-plus.svg" alt="googlePlus-icon">
+                  <p>Google+</p>
+                  <p>2,530</p>
+                </li>
+              </ul>
+          </div>
         </div>
-        <div class="social-stats">
-          <canvas id="myChart"></canvas>
+
+        <div class="members">
+          <h2 class='headline--secondary'>NEW MEMBERS</h2>
+          <ul>
+            <li>
+              <img src="" alt="avatar">
+              <p>User Name</p>
+              <p>User email</p>
+              <p>10/05/15</p>
+            </li>
+
+          </ul>
         </div>
-        <div class="new-members">
-          <canvas id="myChart"></canvas>
+
+        <div class="activity">
+          <h2 class='headline--secondary'>RECENT ACTIVITY</h2>
         </div>
-        <div class="recent-activity">
-          <canvas id="myChart"></canvas>
+
+        <div class="message">
+            <h2 class='headline--secondary'>MESSAGE USER</h2>
         </div>
+
+        <div class="setting">
+            <h2 class='headline--secondary'>SETTINGS</h2>
+        </div>
+
       </main>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js" integrity="sha256-qSIshlknROr4J8GMHRlW3fGKrPki733tLq+qeMCR05Q=" crossorigin="anonymous"></script>
