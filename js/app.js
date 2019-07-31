@@ -12,12 +12,6 @@ var myChart1 = new Chart(ctx, {
         }]
     },
     options: {
-        layout: {
-            padding: {
-                right: 20,
-                left: 20
-            }
-        },
         maintainAspectRatio: false,
         legend: {
             display: false,
@@ -78,12 +72,6 @@ var myChart2 = new Chart(ctx2, {
         }]
     },
     options: {
-        layout: {
-            padding: {
-                right: 20,
-                left: 20
-            }
-        },
         maintainAspectRatio: false,
         legend: {
             display: false,
@@ -131,12 +119,6 @@ var myChart3 = new Chart(ctx3, {
         }]
     },
     options: {
-        layout: {
-            padding: {
-                right: 20,
-                left: 20
-            }
-        },
         legend: {
             position: 'right',
         },

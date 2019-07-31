@@ -1,0 +1,14 @@
+.alert-msg {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: $ship-cove;
+    border-radius: 5px;
+    margin: 20px auto 0 auto;
+    width: 96%;
+    height: 60px;
+    padding: 0 15px;
+    @include mq {
+        height: 40px;
+    }
+}

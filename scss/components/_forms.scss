@@ -1,8 +1,11 @@
 .main__input {
     border-radius: 5px;
-    border: 1px solid $dove-gray;
+    border: 1px solid lighten($dove-gray,25);
     height: 40px;
-    width: 285px;
+    width: 95%;
     background-color: $white;
-
+    padding: 10px; 
+    @include mq {
+        width: 55%;
+    }
 }
