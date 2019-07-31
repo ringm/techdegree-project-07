@@ -1,21 +1,9 @@
-.logo {
-    color: $white;
-    font-size: em(24px);
-    span {
-        font-weight: $font-weight--light;
-    }
-}
-
-.headline {
-    &--secondary {
-        color: $dove-gray;
-        font-size: em(16px);
-        font-weight: $font-weight--regular;
-    }
-}
-
-.username {
-    color: $white;
-    font-size: em(16px);
-    font-weight: $font-weight--light;
+.main__heading {
+    margin-right: auto;
+    color: $dove-gray;
+    font-size: 20px;
+    font-weight: $font-weight--regular;
+    background-color: $white;
+    padding: 20px 25px;
+    margin: 0;
 }

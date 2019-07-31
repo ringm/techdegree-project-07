@@ -1,26 +1,41 @@
 
-nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 27px;
-    @include mq {
-        flex-direction: column;
-        margin-top: 0; 
+.site-logo {
+    color: $white;
+    font-weight: $font-weight--bold;
+    margin-right: auto;
+    span {
+        font-weight: $font-weight--light;
     }
 }
 
-nav li {
-    @include mq {
-        margin-top: 25px;
-    }
-    
+.user--name {
+    color: $white;
+    font-size: 14px;
+    margin-left: 20px;
 }
 
-.icon--nav {
-    opacity: 0.5;
-    &:hover {
-        opacity: 1;
-        transition: .5s;
+.nav {
+    padding: 25px;
+    &__menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 0;
+        @include mq {
+            flex-direction: column;
+        }
+    }
+    &__item {
+        margin-bottom: 25px;
+    }
+    &__link {
+        opacity: .5;
+        &:hover {
+            opacity: 1;
+            transition: .4s;
+        }
+    }
+    &__icon {
+        height: 25px;
     }
 }

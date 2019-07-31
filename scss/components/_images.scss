@@ -1,29 +1,11 @@
-.icon {
-    &--alert{
-        height: 20px;
-        margin-right: 25px;
-        padding-right: 20px;
-        border-right: 1px solid darken($mulled-wine, 5);
-    }
-    &--nav{
-        height: 25px;
-    }
-    &--social {
-        height: 50px;
-        float: left;
-        &--bg {
-            display: inline-block;
-            width: 60px;
-            height: 60px;
-            background-color: $mulled-wine;
-            border-radius: 50%;
-        }
-    }
+.img--user-avatar {
+    border-radius: 50%;
+    height: 40px;
 }
 
-.img {
-    &--avatar {
-        border-radius: 50%;
-        height: 35px;
-    }
+.icon--notification {
+    height: 25px;
+    margin-right: 20px;
+    border-right: 1px solid $mulled-wine;
+    padding-right: 20px;
 }
