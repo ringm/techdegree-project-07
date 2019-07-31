@@ -33,7 +33,7 @@
               <img class="icon--nav" src="icons/icon-members.svg" alt="members icon">
             </a>
           </li>
-          <li class='nav__item'> 
+          <li class='nav__item'>
             <a class='nav__link' href="#">
               <img class="icon--nav" src="icons/icon-visits.svg" alt="visits icon">
             </a>
@@ -54,7 +54,7 @@
             <input class='main__input' type="search" name="search" placeholder="Search...">
           </div>
         </div>
-        
+
         <div class='alert-msg'>
           <p class='alert-msg__text'><span>Alert!</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <a href="#">
@@ -87,7 +87,7 @@
 
           <div class='widget-grid__mobile'>
               <h2 class='widget__heading'>MOBILE USERS</h2>
-          <!--    <div class='chart-container'>
+      <!--    <div class='chart-container'>
                 <canvas id="mobile-users"></canvas>
               </div> -->
           </div>
@@ -115,12 +115,30 @@
 
           <div class='widget-grid__members'>
             <h2 class='widget__heading'>NEW MEMBERS</h2>
-          <!--  <ul>
-              <li>
-                <img src="" alt="avatar">
-                <p>User Name</p>
-                <p>User email</p>
-                <p>10/05/15</p>
+          <!--<ul class='member-list'>
+              <li class='member-list__item'>
+                <img class='img-user src="images/member-1.jpg" alt="avatar">
+                <p class='user-name'>Victoria Chambers</p>
+                <p class='user-email'>victoria.chambers80@example.com</p>
+                <p class='post-date'>10/05/19</p>
+              </li>
+              <li class='member-list__item'>
+                <img class='img-user src="images/member-2.jpg" alt="avatar">
+                <p class='user-name'>Dale Byrd</p>
+                <p class='user-email'>dale.byrd52@example.com</p>
+                <p class='post-date'>08/05/19</p>
+              </li>
+              <li class='member-list__item'>
+                <img class='img-user src="images/member-3.jpg" alt="avatar">
+                <p class='user-name'>Dawn Wood</p>
+                <p class='user-email'>dawn.wood16@example.com</p>
+                <p class='post-date'>02/05/19</p>
+              </li>
+              <li class='member-list__item'>
+                <img class='img-user src="images/member-4.jpg" alt="avatar">
+                <p class='user-name'>Dan Oliver</p>
+                <p class='user-email'>dan.oliver82@example.com</p>
+                <p class='post-date'>25/04/19</p>
               </li>
 
             </ul>-->
@@ -128,14 +146,63 @@
 
           <div class='widget-grid__activity'>
             <h2 class='widget__heading'>RECENT ACTIVITY</h2>
+          <!--<ul class='activity-list'>
+                <li class='activiry-list__item'>
+                  <img class='img-user src="images/member-1.jpg" alt="avatar">
+                  <p class='user-name'>Victoria Chambers commented on YourApp's SEO Tips</p>
+                  <p class='post-date'>4 hours ago</p>
+                  <img src="icon-arrow.svg" alt="arrow">
+                </li>
+                <li class='activity-list__item'>
+                  <img class='img-user src="images/member-2.jpg" alt="avatar">
+                  <p class='user-name'>Dale Byrd</p>
+                  <p class='post-date'>5 hours ago</p>
+                </li>
+                <li class='activity-list__item'>
+                  <img class='img-user src="images/member-3.jpg" alt="avatar">
+                  <p class='user-name'>Dawn Wood</p>
+                  <p class='post-date'>5 hours ago</p>
+                </li>
+                <li class='activity-list__item'>
+                  <img class='img-user src="images/member-4.jpg" alt="avatar">
+                  <p class='user-name'>Dan Oliver</p>
+                  <p class='post-date'>1 day ago</p>
+                </li>
+              </ul>-->
           </div>
 
           <div class='widget-grid__message'>
             <h2 class='widget__heading'>MESSAGE USER</h2>
+            <input type="search" name="search" placeholder="Search for User">
+            <textarea name="message_for_user">Message for User</textarea>
+            <button class='button--send' type="send" name="button">Send</button>
           </div>
 
           <div class='widget-grid__settings'>
             <h2 class='widget__heading'>SETTINGS</h2>
+            <div class=setting--option>
+              <p>Send Email Notifications</p>
+              <div class="setting--toggle">
+                <p>ON</p>
+                <div class="circle"></div>
+              </div>
+            </div>
+            <div class=setting--option>
+              <p>Send Profile to Public</p>
+              <div class="setting--toggle">
+                <p>ON</p>
+                <div class="circle"></div>
+              </div>
+            </div>
+            <select class="time-zone" name="time_zone">
+              <option value="" selected disabled hidden>Select Timezone</option>
+              <option value="PT">Pacific Time (UTC -8:00)</option>
+              <option value="MT">Mountain Time (UTC -7:00)</option>
+              <option value="CT">Central Time (UTC -6:00)</option>
+              <option value="ET">Eastern Time (UTC -5:00)</option>
+            </select>
+            <button class='button--save' type="save" name="button">Save</button>
+            <button class='button--cancel' type="cancel" name="button">Cancel</button>
           </div>
         </div>
       </main>
