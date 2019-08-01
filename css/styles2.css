@@ -1,0 +1,131 @@
+.chart-container--small {
+  height: 130px;
+}
+
+/*-----------------------------
+SOCIAL STATS
+-----------------------------*/
+
+.social__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.social__list-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
+  width: 28%;
+  height: 80px;
+  background-color: #fbfbfb;
+}
+
+.social-icon__bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #7377bf;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.icon--social-media {
+  height: 25px;
+}
+
+.icon--social-media path {
+  fill: #fff;
+}
+
+.social-media__data {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.social-media__name {
+  margin: 0;
+  font-weight: bold;
+  color: #7377bf;
+}
+
+.social-media__number {
+  margin: 0;
+  font-size: 30px;
+  font-weight: lighter;
+  color: #666;
+}
+
+/*-----------------------------
+NEW MEMBERS
+-----------------------------*/
+.member__list,
+.activity__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.member__list-item,
+.activity__list-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #d1d1d1;
+}
+
+.member__list-item:first-child,
+.activity__list-item:first-child {
+  padding-top: 0;
+}
+
+.member__list-item:last-child,
+.activity__list-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.img-user {
+  height: 40px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 10px;
+}
+
+.user-data {
+  margin-right: auto;
+}
+
+.user-name,
+.user-email,
+.post-date {
+  text-align: left;
+  margin: 0;
+}
+
+.user-name,
+.post-date {
+  color: #666;
+}
+
+.user-email {
+  color: #7377bf;
+  font-weight: lighter;
+}
+
+/*-----------------------------
+ACTIVITY
+-----------------------------*/
+
+.icon--arrow {
+  height: 18px;
+}
