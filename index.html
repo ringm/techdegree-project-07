@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/styles2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.css" integrity="sha256-IvM9nJf/b5l2RoebiFno92E5ONttVyaEEsdemDC6iQA=" crossorigin="anonymous" />
     <title>My Dashboard</title>
   </head>
@@ -74,101 +75,131 @@
               </ul>
             </div>
           <div class='chart-container'>
-              <canvas id="traffic"></canvas>
+            <canvas id="traffic"></canvas>
           </div>
           </div>
 
           <div class='widget-grid__daily'>
-              <h2 class='widget__heading'>DAILY TRAFFIC</h2>
-            <!--  <div class='chart-container'>
-                <canvas id="daily-traffic"></canvas>
-              </div> -->
+            <h2 class='widget__heading'>DAILY TRAFFIC</h2>
+            <div class='chart-container--small'>
+              <canvas id="daily-traffic"></canvas>
+            </div>
           </div>
 
           <div class='widget-grid__mobile'>
-              <h2 class='widget__heading'>MOBILE USERS</h2>
-      <!--    <div class='chart-container'>
-                <canvas id="mobile-users"></canvas>
-              </div> -->
+            <h2 class='widget__heading'>MOBILE USERS</h2>
+            <div class='chart-container--small'>
+              <canvas id="mobile-users"></canvas>
+            </div>
           </div>
 
           <div class='widget-grid__social'>
-              <h2 class='widget__heading'>SOCIAL STATS</h2>
-          <!--    <ul>
-                <li>
-                  <img src="icons/icon-twitter.svg" alt="twitter-icon">
-                  <p>Twitter</p>
-                  <p>10,345</p>
-                </li>
-                <li>
-                  <img src="icons/icon-facebook.svg" alt="facebook-icon">
-                  <p>Facebook</p>
-                  <p>8,739</p>
-                </li>
-                <li>
-                  <img src="icons/icon-google-plus.svg" alt="googlePlus-icon">
-                  <p>Google+</p>
-                  <p>2,530</p>
-                </li>
-              </ul> -->
+            <h2 class='widget__heading'>SOCIAL STATS</h2>
+            <ul class='social__list'>
+              <li class='social__list-item'>
+                <div class="social-icon__bg">
+                  <img class="icon--social-media" src="icons/icon-twitter.svg" alt="twitter-icon">
+                </div>
+                <div class="social-media__data">
+                  <p class='social-media__name'>Twitter</p>
+                  <p class='social-media__number'>10,345</p>
+                </div>
+              </li>
+              <li class='social__list-item'>
+                <div class="social-icon__bg">
+                  <img class="icon--social-media" src="icons/icon-facebook.svg" alt="facebook-icon">
+                </div>
+                <div class="social-media__data">
+                  <p class='social-media__name'>Facebook</p>
+                  <p class='social-media__number'>8,739</p>
+                </div>
+              </li>
+              <li class='social__list-item'>
+                <div class="social-icon__bg">
+                  <img class="icon--social-media" src="icons/icon-google-plus.svg" alt="gplus-icon">
+                </div>
+                <div class="social-media__data">
+                  <p class='social-media__name'>Google+</p>
+                  <p class='social-media__number'>2,530</p>
+                </div>
+              </li>
+            </ul>
           </div>
 
           <div class='widget-grid__members'>
             <h2 class='widget__heading'>NEW MEMBERS</h2>
-          <!--<ul class='member-list'>
-              <li class='member-list__item'>
-                <img class='img-user src="images/member-1.jpg" alt="avatar">
-                <p class='user-name'>Victoria Chambers</p>
-                <p class='user-email'>victoria.chambers80@example.com</p>
+            <ul class='member__list'>
+              <li class='member__list-item'>
+                <img class='img-user' src="images/member-1.jpg" alt="avatar">
+                <div class='user-data'>
+                  <p class='user-name'>Victoria Chambers</p>
+                  <p class='user-email'>victoria.chambers80@example.com</p>
+                </div>
                 <p class='post-date'>10/05/19</p>
               </li>
-              <li class='member-list__item'>
-                <img class='img-user src="images/member-2.jpg" alt="avatar">
-                <p class='user-name'>Dale Byrd</p>
-                <p class='user-email'>dale.byrd52@example.com</p>
+              <li class='member__list-item'>
+                <img class='img-user' src="images/member-2.jpg" alt="avatar">
+                <div class='user-data'>
+                  <p class='user-name'>Dale Byrd</p>
+                  <p class='user-email'>dale.byrd52@example.com</p>
+                </div>
                 <p class='post-date'>08/05/19</p>
               </li>
-              <li class='member-list__item'>
-                <img class='img-user src="images/member-3.jpg" alt="avatar">
-                <p class='user-name'>Dawn Wood</p>
-                <p class='user-email'>dawn.wood16@example.com</p>
+              <li class='member__list-item'>
+                <img class='img-user' src='images/member-3.jpg' alt="avatar">
+                <div class='user-data'>
+                  <p class='user-name'>Dawn Wood</p>
+                  <p class='user-email'>dawn.wood16@example.com</p>
+                </div>
                 <p class='post-date'>02/05/19</p>
               </li>
-              <li class='member-list__item'>
-                <img class='img-user src="images/member-4.jpg" alt="avatar">
-                <p class='user-name'>Dan Oliver</p>
-                <p class='user-email'>dan.oliver82@example.com</p>
+              <li class='member__list-item'>
+                <img class='img-user' src="images/member-4.jpg" alt="avatar">
+                <div class='user-data'>
+                  <p class='user-name'>Dan Oliver</p>
+                  <p class='user-email'>dan.oliver82@example.com</p>
+                </div>
                 <p class='post-date'>25/04/19</p>
               </li>
-
-            </ul>-->
+            </ul>
           </div>
 
           <div class='widget-grid__activity'>
             <h2 class='widget__heading'>RECENT ACTIVITY</h2>
-          <!--<ul class='activity-list'>
-                <li class='activiry-list__item'>
-                  <img class='img-user src="images/member-1.jpg" alt="avatar">
+            <ul class='activity__list'>
+              <li class='activity__list-item'>
+                <img class='img-user' src="images/member-1.jpg" alt="avatar">
+                <div class='user-data'>
                   <p class='user-name'>Victoria Chambers commented on YourApp's SEO Tips</p>
                   <p class='post-date'>4 hours ago</p>
-                  <img src="icon-arrow.svg" alt="arrow">
-                </li>
-                <li class='activity-list__item'>
-                  <img class='img-user src="images/member-2.jpg" alt="avatar">
+                </div>
+                <img class='icon--arrow' src="icons/icon-arrow.svg" alt="arrow">
+              </li>
+              <li class='activity__list-item'>
+                <img class='img-user' src="images/member-2.jpg" alt="avatar">
+                <div class='user-data'>
                   <p class='user-name'>Dale Byrd</p>
                   <p class='post-date'>5 hours ago</p>
-                </li>
-                <li class='activity-list__item'>
-                  <img class='img-user src="images/member-3.jpg" alt="avatar">
+                </div>
+                <img class='icon--arrow' src="icons/icon-arrow.svg" alt="arrow">
+              </li>
+              <li class='activity__list-item'>
+                <img class='img-user' src="images/member-3.jpg" alt="avatar">
+                <div class='user-data'>
                   <p class='user-name'>Dawn Wood</p>
                   <p class='post-date'>5 hours ago</p>
-                </li>
-                <li class='activity-list__item'>
-                  <img class='img-user src="images/member-4.jpg" alt="avatar">
+                </div>
+                <img class='icon--arrow' src="icons/icon-arrow.svg" alt="arrow">
+              </li>
+              <li class='activity__list-item'>
+                <img class='img-user' src="images/member-4.jpg" alt="avatar">
+                <div class='user-data'>
                   <p class='user-name'>Dan Oliver</p>
                   <p class='post-date'>1 day ago</p>
-                </li>
-              </ul>-->
+                </div>
+                <img class='icon--arrow' src="icons/icon-arrow.svg" alt="arrow">
+              </li>
+            </ul>
           </div>
 
           <div class='widget-grid__message'>
