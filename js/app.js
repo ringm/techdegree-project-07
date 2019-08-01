@@ -83,7 +83,7 @@ var myChart2 = new Chart(ctx2, {
                     drawTicks: false,
                 },
                 ticks: {
-                    padding: 20,
+                    padding: 10,
                 }
             }],
             yAxes: [{
@@ -114,7 +114,7 @@ var myChart3 = new Chart(ctx3, {
                 'rgba(129, 201, 143, 1)',
                 'rgba(115, 119, 191, 1)',
             ],
-            borderColor: ['',],
+            borderColor: ['#fff',],
             borderWidth: 0
         }]
     },
@@ -127,8 +127,10 @@ var myChart3 = new Chart(ctx3, {
             yAxes: [{
                 gridLines: {
                     display: false,
+                    lineWidth: 0,
                 },
                 ticks: {
+                    display: false,
                     beginAtZero: true,
                     display: false,
                 }
