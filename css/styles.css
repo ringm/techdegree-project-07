@@ -481,7 +481,7 @@ p {
 
 .widget__heading {
   color: #666;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   margin-right: auto;
 }
@@ -558,10 +558,10 @@ p {
   height: 50px;
   border-radius: 5px;
   border: none;
-  margin-top: auto;
   background-color: #7477bf;
   color: #fff;
   font-weight: 400;
+  margin-top: auto;
 }
 
 .button--save {
@@ -573,6 +573,7 @@ p {
   background-color: #7477bf;
   color: #fff;
   font-weight: 400;
+  margin-top: auto;
 }
 
 .button--cancel {
@@ -583,6 +584,7 @@ p {
   background-color: #b2b2b2;
   color: #fff;
   font-weight: 400;
+  margin-top: auto;
 }
 
 .site-logo {
@@ -670,6 +672,10 @@ p {
   fill: #fff;
 }
 
+.icon-arrow {
+  height: 18px;
+}
+
 .widget-header {
   display: flex;
   flex-direction: row;
@@ -733,71 +739,49 @@ p {
 /*-----------------------------
 NEW MEMBERS
 -----------------------------*/
-.member__list,
-.activity__list {
+.user__list {
   display: flex;
   flex-direction: column;
 }
-
-.member__list-item,
-.activity__list-item {
+.user__list-item {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 10px 0;
   border-bottom: 1px solid #d1d1d1;
 }
-
-.member__list-item:first-child,
-.activity__list-item:first-child {
+.user__list-item:first-child {
   padding-top: 0;
 }
-
-.member__list-item:last-child,
-.activity__list-item:last-child {
+.user__list-item:last-child {
   border-bottom: none;
   padding-bottom: 0;
 }
 
-.img-user {
+.user__avatar {
   height: 40px;
   border-radius: 50%;
-  float: left;
   margin-right: 10px;
 }
 
-.user-data {
+.user__data {
   margin-right: auto;
 }
-
-.user-name,
-.user-email,
-.post-date {
+.user__data-one, .user__data-two {
   text-align: left;
   margin: 0;
-}
-
-.user-name,
-.post-date {
   color: #666;
 }
-
-.user-email {
+.user__data--purple {
   color: #7477bf;
   font-weight: lighter;
 }
 
 /*-----------------------------
-ACTIVITY
------------------------------*/
-.icon--arrow {
-  height: 18px;
-}
-
-/*-----------------------------
 MESSAGE USER
 ----------------------------*/
-.widget-grid__message {
+.widget-grid__message,
+.widget-grid__settings {
   display: flex;
   flex-direction: column;
 }
@@ -805,12 +789,6 @@ MESSAGE USER
 /*-----------------------------
 SETTINGS
 ----------------------------*/
-.widget-grid__settings {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
 .setting-option {
   display: flex;
   flex-direction: row;

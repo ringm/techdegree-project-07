@@ -61,73 +61,52 @@
   /*-----------------------------
   NEW MEMBERS
   -----------------------------*/
-  .member__list,
-  .activity__list {
+  .user__list {
     display: flex;
     flex-direction: column;
+    &-item {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 10px 0;
+      border-bottom: 1px solid #d1d1d1;
+      &:first-child {
+        padding-top: 0;
+      }
+      &:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+    }
   }
-  
-  .member__list-item,
-  .activity__list-item {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 10px 0;
-    border-bottom: 1px solid #d1d1d1;
-  }
-  
-  .member__list-item:first-child,
-  .activity__list-item:first-child {
-    padding-top: 0;
-  }
-  
-  .member__list-item:last-child,
-  .activity__list-item:last-child {
-    border-bottom: none;
-    padding-bottom: 0;
-  }
-  
-  .img-user {
+
+  .user__avatar {
     height: 40px;
     border-radius: 50%;
-    float: left;
     margin-right: 10px;
   }
   
-  .user-data {
+  .user__data {
     margin-right: auto;
+    &-one,
+    &-two {
+      text-align: left;
+      margin: 0;
+      color: $dove-gray;
+    }
+    &--purple {
+      color: $ship-cove;
+      font-weight: lighter;
+    }
   }
   
-  .user-name,
-  .user-email,
-  .post-date {
-    text-align: left;
-    margin: 0;
-  }
-  
-  .user-name,
-  .post-date {
-    color: $dove-gray;
-  }
-  
-  .user-email {
-    color: $ship-cove;
-    font-weight: lighter;
-  }
-  
-  /*-----------------------------
-  ACTIVITY
-  -----------------------------*/
-  
-  .icon--arrow {
-    height: 18px;
-  }
 
 /*-----------------------------
 MESSAGE USER
 ----------------------------*/
 
-.widget-grid__message {
+.widget-grid__message,
+.widget-grid__settings {
     display: flex;
     flex-direction: column;
 }
@@ -135,12 +114,6 @@ MESSAGE USER
 /*-----------------------------
 SETTINGS
 ----------------------------*/
-
-.widget-grid__settings {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
 
 .setting-option {
     display: flex;
