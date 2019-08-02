@@ -33,7 +33,6 @@
 .widget-grid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(8, 200px);
   grid-template-areas:
     'traffic'
     'daily'
@@ -45,7 +44,7 @@
     'settings';
     @include mq {
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: 350px repeat(4, 200px);
+      grid-template-rows: 350px;
       grid-template-areas:
         'traffic traffic'
         'daily mobile'
@@ -55,45 +54,45 @@
     }
   &__traffic {
     grid-area: traffic;
-    border-bottom: 1px solid $silver-chalice;
+    border-bottom: 1px solid darken($alabaster, 5);
     padding: 10px 20px;
   }
   &__daily {
     grid-area: daily;
-    border-bottom: 1px solid $silver-chalice ;
+    border-bottom: 1px solid darken($alabaster, 5);
     padding: 10px 20px;
   }
   &__mobile {
     grid-area: mobile;
-    border-bottom: 1px solid $silver-chalice ;
-    border-left: 1px solid $silver-chalice ;
+    border-bottom: 1px solid darken($alabaster, 5);
+    border-left: 1px solid darken($alabaster, 5);
     padding: 10px 20px;
   }
   &__social {
     grid-area: social;
-    border-bottom: 1px solid $silver-chalice ;
+    border-bottom: 1px solid darken($alabaster, 5);
     padding: 10px 20px;
   }
   &__members {
     grid-area: members;
-    border-bottom: 1px solid $silver-chalice ;
+    border-bottom: 1px solid darken($alabaster, 5);
     padding: 10px 20px;
   }
   &__activity {
     grid-area: activity;
-    border-bottom: 1px solid $silver-chalice ;
-    border-left: 1px solid $silver-chalice ;
+    border-bottom: 1px solid darken($alabaster, 5);
+    border-left: 1px solid darken($alabaster, 5);
     padding: 10px 20px;
   }
   &__message {
     grid-area: messages;
-    border-bottom: 1px solid $silver-chalice ;
+    border-bottom: 1px solid darken($alabaster, 5);
     padding: 10px 20px;
   }
   &__settings {
     grid-area: settings;
-    border-bottom: 1px solid $silver-chalice ;
-    border-left: 1px solid $silver-chalice ;
+    border-bottom: 1px solid darken($alabaster, 5);
+    border-left: 1px solid darken($alabaster, 5);
     padding: 10px 20px;
   }
 }
@@ -113,4 +112,10 @@
     border-left: 1px solid $silver-chalice;
     border-bottom: 1px solid $silver-chalice;
   }
+}
+
+.social-media__data {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }

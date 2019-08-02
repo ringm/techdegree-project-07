@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="css/styles2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.css" integrity="sha256-IvM9nJf/b5l2RoebiFno92E5ONttVyaEEsdemDC6iQA=" crossorigin="anonymous" />
     <title>My Dashboard</title>
   </head>
@@ -204,36 +203,38 @@
 
           <div class='widget-grid__message'>
             <h2 class='widget__heading'>MESSAGE USER</h2>
-            <input type="search" name="search" placeholder="Search for User">
-            <textarea name="message_for_user">Message for User</textarea>
-            <button class='button--send' type="send" name="button">Send</button>
+            <input class='input--search-user' type="search" name="search" placeholder="Search for User">
+            <textarea class='textarea--message-user' name="message_for_user" placeholder="Message for User"></textarea>
+            <button class='button--send' type="send" name="button">SEND</button>
           </div>
 
           <div class='widget-grid__settings'>
             <h2 class='widget__heading'>SETTINGS</h2>
-            <div class=setting--option>
-              <p>Send Email Notifications</p>
-              <div class="setting--toggle">
+            <div class='setting-option'>
+              <p class='setting-option__text'>Send Email Notifications</p>
+              <div class='setting-toggle'>
                 <p>ON</p>
                 <div class="circle"></div>
               </div>
             </div>
-            <div class=setting--option>
-              <p>Send Profile to Public</p>
-              <div class="setting--toggle">
+            <div class='setting-option'>
+              <p class='setting-option__text'>Set Profile to Public</p>
+              <div class="setting-toggle">
                 <p>ON</p>
                 <div class="circle"></div>
               </div>
             </div>
-            <select class="time-zone" name="time_zone">
+            <select class="select--time-zone" name="time_zone">
               <option value="" selected disabled hidden>Select Timezone</option>
               <option value="PT">Pacific Time (UTC -8:00)</option>
               <option value="MT">Mountain Time (UTC -7:00)</option>
               <option value="CT">Central Time (UTC -6:00)</option>
               <option value="ET">Eastern Time (UTC -5:00)</option>
             </select>
-            <button class='button--save' type="save" name="button">Save</button>
-            <button class='button--cancel' type="cancel" name="button">Cancel</button>
+            <div class='setting-buttons'>
+              <button class='button--save' type="save" name="button">SAVE</button>
+              <button class='button--cancel' type="cancel" name="button">CANCEL</button>
+            </div>
           </div>
         </div>
       </main>

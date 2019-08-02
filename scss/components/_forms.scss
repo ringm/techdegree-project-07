@@ -9,3 +9,30 @@
         width: 55%;
     }
 }
+
+.input--search-user {
+    border: 1px solid lighten($dove-gray,25);
+    background-color: $alabaster;
+    border-radius: 5px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.textarea--message-user {
+    border: 1px solid lighten($dove-gray,25);
+    background-color: $alabaster;
+    height: 100px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.select--time-zone {
+    border: 1px solid lighten($dove-gray,25);
+    background-color: $alabaster;
+    border-radius: 5px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+}

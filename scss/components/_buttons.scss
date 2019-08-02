@@ -12,3 +12,36 @@
         height: 40px;
     }
 }
+
+.button--send {
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: $ship-cove;
+    color: $white;
+    font-weight: $font-weight--regular;
+    margin-top: auto;
+}
+
+.button--save {
+    flex: 1;
+    margin-right: 10px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: $ship-cove;
+    color: $white;
+    font-weight: $font-weight--regular;
+    margin-top: auto;
+}
+
+.button--cancel {
+    flex: 1;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: $silver-chalice;
+    color: $white;
+    font-weight: $font-weight--regular;
+    margin-top: auto;
+}
