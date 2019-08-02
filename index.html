@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.css" integrity="sha256-IvM9nJf/b5l2RoebiFno92E5ONttVyaEEsdemDC6iQA=" crossorigin="anonymous" />
     <title>My Dashboard</title>
   </head>
-  <body>
+  <body class='container'>
     <div class="page-grid">
 
       <header class='page-grid__header'>
@@ -46,124 +46,139 @@
         </ul>
       </nav>
 
-      <main class='page-grid__main'>
-        <div class='main__header'>
-          <h2 class='main__heading'>Dashboard</h2>
-          <div class='main__header--border'>
-            <img class='icon--search' src="icons/icon-search.svg" alt="search-icon">
-            <input class='main__input' type="search" name="search" placeholder="Search...">
+      <main>
+        <div class='grid__row'>
+          <div class='grid__col--1'>
+            <h2 class='main__heading'>Dashboard</h2>
+          </div>
+          <div class='grid__col--12'>
+            <div class='main__header--border'>
+              <img class='icon--search' src="icons/icon-search.svg" alt="search-icon">
+              <input class='main__input' type="search" name="search" placeholder="Search...">
+            </div>
           </div>
         </div>
 
-        <div class='alert-msg'>
-          <p class='alert-msg__text'><span>Alert!</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <a href="#">
-            <img class='icon--close' src="icons/icon-close.svg" alt="close">
-          </a>
+        <div class='grid__row'>
+          <div class='grid__col--12'>
+            <p class='alert-msg__text'><span>Alert!</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href="#">
+              <img class='icon--close' src="icons/icon-close.svg" alt="close">
+            </a>
+          </div>
         </div>
 
         <div class='widget-grid'>
-          <div class='widget-grid__traffic'>
-            <div class='widget-header'>
-              <h2 class='widget__heading'>TRAFFIC</h2>
-              <ul class='widget-menu'>
-                <li class='widget-menu__item'><a href='#'>Hourly</a></li>
-                <li class='widget-menu__item'><a href='#'>Daily</a></li>
-                <li class='widget-menu__item'><a href='#'>Weekly</a></li>
-                <li class='widget-menu__item'><a href='#'>Monthly</a></li>
-              </ul>
+            <div class='grid__row'>
+              <div class='grid__col--3'>
+                <h2 class='widget__heading'>TRAFFIC</h2>
+              </div>
+              <div class='grid__col--9'>
+                <ul class='widget-menu'>
+                  <li class='widget-menu__item'><a href='#'>Hourly</a></li>
+                  <li class='widget-menu__item'><a href='#'>Daily</a></li>
+                  <li class='widget-menu__item'><a href='#'>Weekly</a></li>
+                  <li class='widget-menu__item'><a href='#'>Monthly</a></li>
+                </ul>
             </div>
-          <div class='chart-container'>
-            <canvas id="traffic"></canvas>
           </div>
+          <div class='grid__row'>
+            <div class='grid__col--12'>
+              <canvas id="traffic"></canvas>
+            </div>
           </div>
 
-          <div class='widget-grid__daily'>
+        <div class='grid__row'>
+          <div class='grid__col--6'>
             <h2 class='widget__heading'>DAILY TRAFFIC</h2>
             <div class='chart-container--small'>
               <canvas id="daily-traffic"></canvas>
             </div>
           </div>
 
-          <div class='widget-grid__mobile'>
+          <div class='grid__col--6'>
             <h2 class='widget__heading'>MOBILE USERS</h2>
             <div class='chart-container--small'>
               <canvas id="mobile-users"></canvas>
             </div>
           </div>
+        </div>
 
-          <div class='widget-grid__social'>
-            <h2 class='widget__heading'>SOCIAL STATS</h2>
-            <ul class='social__list'>
-              <li class='social__list-item'>
-                <div class="social-icon__bg">
-                  <img class="icon--social-media" src="icons/icon-twitter.svg" alt="twitter-icon">
-                </div>
-                <div class="social-media__data">
-                  <p class='social-media__name'>Twitter</p>
-                  <p class='social-media__number'>10,345</p>
-                </div>
-              </li>
-              <li class='social__list-item'>
-                <div class="social-icon__bg">
-                  <img class="icon--social-media" src="icons/icon-facebook.svg" alt="facebook-icon">
-                </div>
-                <div class="social-media__data">
-                  <p class='social-media__name'>Facebook</p>
-                  <p class='social-media__number'>8,739</p>
-                </div>
-              </li>
-              <li class='social__list-item'>
-                <div class="social-icon__bg">
-                  <img class="icon--social-media" src="icons/icon-google-plus.svg" alt="gplus-icon">
-                </div>
-                <div class="social-media__data">
-                  <p class='social-media__name'>Google+</p>
-                  <p class='social-media__number'>2,530</p>
-                </div>
-              </li>
-            </ul>
+          <div class='grid__row'>
+            <div class='grid__col--12'>
+              <h2 class='widget__heading'>SOCIAL STATS</h2>
+              <ul class='social__list'>
+                <li class='social__list-item'>
+                  <div class="social-icon__bg">
+                    <img class="icon--social-media" src="icons/icon-twitter.svg" alt="twitter-icon">
+                  </div>
+                  <div class="social-media__data">
+                    <p class='social-media__name'>Twitter</p>
+                    <p class='social-media__number'>10,345</p>
+                  </div>
+                </li>
+                <li class='social__list-item'>
+                  <div class="social-icon__bg">
+                    <img class="icon--social-media" src="icons/icon-facebook.svg" alt="facebook-icon">
+                  </div>
+                  <div class="social-media__data">
+                    <p class='social-media__name'>Facebook</p>
+                    <p class='social-media__number'>8,739</p>
+                  </div>
+                </li>
+                <li class='social__list-item'>
+                  <div class="social-icon__bg">
+                    <img class="icon--social-media" src="icons/icon-google-plus.svg" alt="gplus-icon">
+                  </div>
+                  <div class="social-media__data">
+                    <p class='social-media__name'>Google+</p>
+                    <p class='social-media__number'>2,530</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
 
-          <div class='widget-grid__members'>
-            <h2 class='widget__heading'>NEW MEMBERS</h2>
-            <ul class='user__list'>
-              <li class='user__list-item'>
-                <img class='user__avatar' src="images/member-1.jpg" alt="avatar">
-                <div class='user__data'>
-                  <p class='user__data-one'>Victoria Chambers</p>
-                  <p class='user__data-two user__data--purple'>victoria.chambers80@example.com</p>
-                </div>
-                <p class='user__data-aux'>10/05/19</p>
-              </li>
-              <li class='user__list-item'>
-                <img class='user__avatar' src="images/member-2.jpg" alt="avatar">
-                <div class='user__data'>
-                  <p class='user__data-one'>Dale Byrd</p>
-                  <p class='user__data-two user__data--purple'>dale.byrd52@example.com</p>
-                </div>
-                <p class='user__data-aux'>08/05/19</p>
-              </li>
-              <li class='user__list-item'>
-                <img class='user__avatar' src='images/member-3.jpg' alt="avatar">
-                <div class='user__data'>
-                  <p class='user__data-one'>Dawn Wood</p>
-                  <p class='user__data-two user__data--purple'>dawn.wood16@example.com</p>
-                </div>
-                <p class='user__data-aux'>02/05/19</p>
-              </li>
-              <li class='user__list-item'>
-                <img class='user__avatar' src="images/member-4.jpg" alt="avatar">
-                <div class='user__data'>
-                  <p class='user__data-one'>Dan Oliver</p>
-                  <p class='user__data-two user__data--purple'>dan.oliver82@example.com</p>
-                </div>
-                <p class='user__data-aux'>25/04/19</p>
-              </li>
-            </ul>
-          </div>
+          <div class='grid__row'>
+            <div class='grid__col--6'>
+              <h2 class='widget__heading'>NEW MEMBERS</h2>
+              <ul class='user__list'>
+                <li class='user__list-item'>
+                  <img class='user__avatar' src="images/member-1.jpg" alt="avatar">
+                  <div class='user__data'>
+                    <p class='user__data-one'>Victoria Chambers</p>
+                    <p class='user__data-two user__data--purple'>victoria.chambers80@example.com</p>
+                  </div>
+                  <p class='user__data-aux'>10/05/19</p>
+                </li>
+                <li class='user__list-item'>
+                  <img class='user__avatar' src="images/member-2.jpg" alt="avatar">
+                  <div class='user__data'>
+                    <p class='user__data-one'>Dale Byrd</p>
+                    <p class='user__data-two user__data--purple'>dale.byrd52@example.com</p>
+                  </div>
+                  <p class='user__data-aux'>08/05/19</p>
+                </li>
+                <li class='user__list-item'>
+                  <img class='user__avatar' src='images/member-3.jpg' alt="avatar">
+                  <div class='user__data'>
+                    <p class='user__data-one'>Dawn Wood</p>
+                    <p class='user__data-two user__data--purple'>dawn.wood16@example.com</p>
+                  </div>
+                  <p class='user__data-aux'>02/05/19</p>
+                </li>
+                <li class='user__list-item'>
+                  <img class='user__avatar' src="images/member-4.jpg" alt="avatar">
+                  <div class='user__data'>
+                    <p class='user__data-one'>Dan Oliver</p>
+                    <p class='user__data-two user__data--purple'>dan.oliver82@example.com</p>
+                  </div>
+                  <p class='user__data-aux'>25/04/19</p>
+                </li>
+              </ul>
+            </div>
 
-          <div class='widget-grid__activity'>
+          <div class='grid__col--6'>
             <h2 class='widget__heading'>RECENT ACTIVITY</h2>
             <ul class='user__list'>
               <li class='user__list-item'>
@@ -200,15 +215,19 @@
               </li>
             </ul>
           </div>
-
-          <div class='widget-grid__message'>
-            <h2 class='widget__heading'>MESSAGE USER</h2>
-            <input class='input--search-user' type="search" name="search" placeholder="Search for User">
-            <textarea class='textarea--message-user' name="message_for_user" placeholder="Message for User"></textarea>
-            <button class='button--send' type="send" name="button">SEND</button>
           </div>
 
-          <div class='widget-grid__settings'>
+          <div class='grid__row'>
+            <div class='grid__col--6'>
+              <h2 class='widget__heading'>MESSAGE USER</h2>
+              <input class='input--search-user' type="search" name="search" placeholder="Search for User">
+              <textarea class='textarea--message-user' name="message_for_user" placeholder="Message for User"></textarea>
+              <div class='grid__row'>
+                <button class='button--send' type="send" name="button">SEND</button>
+              </div>
+            </div>
+
+          <div class='grid__col--6'>
             <h2 class='widget__heading'>SETTINGS</h2>
             <div class='setting-option'>
               <p class='setting-option__text'>Send Email Notifications</p>
@@ -231,7 +250,7 @@
               <option value="CT">Central Time (UTC -6:00)</option>
               <option value="ET">Eastern Time (UTC -5:00)</option>
             </select>
-            <div class='setting-buttons'>
+            <div class='grid__row'>
               <button class='button--save' type="save" name="button">SAVE</button>
               <button class='button--cancel' type="cancel" name="button">CANCEL</button>
             </div>
