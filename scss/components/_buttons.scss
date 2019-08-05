@@ -20,6 +20,10 @@
     margin-top: auto;
     padding: 15px 0;
     width: 100%;
+    &:hover {
+        background-color: darken($ship-cove, 15);
+        transition: .4s;
+    }
 }
 
 .button--save {
@@ -34,6 +38,10 @@
     @include mq {
         margin-right: 10px;
         width: 48%; 
+    }
+    &:hover {
+        background-color: darken($ship-cove, 15);
+        transition: .4s;
     }
 }
 
@@ -50,5 +58,9 @@
     @include mq {
         margin-top: 0;
         width: 48%;
+    }
+    &:hover {
+        background-color: darken($silver-chalice, 15);
+        transition: .4s;
     }
 }

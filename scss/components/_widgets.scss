@@ -12,6 +12,9 @@
     &__item {
         margin-left: 20px;
         font-size: 14px;
+        a {
+          color: $dove-gray;
+        }
     }
 }
 

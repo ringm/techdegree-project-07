@@ -568,6 +568,10 @@ select:focus {
   padding: 15px 0;
   width: 100%;
 }
+.button--send:hover {
+  background-color: #494c9e;
+  transition: 0.4s;
+}
 
 .button--save {
   border-radius: 5px;
@@ -584,6 +588,10 @@ select:focus {
     margin-right: 10px;
     width: 48%;
   }
+}
+.button--save:hover {
+  background-color: #494c9e;
+  transition: 0.4s;
 }
 
 .button--cancel {
@@ -602,6 +610,10 @@ select:focus {
     margin-top: 0;
     width: 48%;
   }
+}
+.button--cancel:hover {
+  background-color: #8c8c8c;
+  transition: 0.4s;
 }
 
 .site-logo {
@@ -730,6 +742,9 @@ select:focus {
 .widget-menu__item {
   margin-left: 20px;
   font-size: 14px;
+}
+.widget-menu__item a {
+  color: #666;
 }
 
 @media (min-width: 768px) {
