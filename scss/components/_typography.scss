@@ -1,24 +1,22 @@
 .main__heading {
-    margin-right: auto;
     color: $dove-gray;
     font-size: 20px;
     font-weight: $font-weight--regular;
     background-color: $white;
-    margin: 0;
+    padding: 0 20px;
 }
 
 .widget__heading {
     color: $dove-gray;
     font-size: 14px;
     font-weight: $font-weight--regular;
-    margin-right: auto;
+    margin: 0 auto 20px 0;
 }
 
 .alert-msg__text {
     color: $white;
     font-weight: $font-weight--regular;
     margin-right: auto;
-    padding-right: 10px;
     span {
         font-weight: $font-weight--bold;
     }

@@ -8,25 +8,34 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: flex-end;
     &__item {
         margin-left: 20px;
         font-size: 14px;
     }
 }
 
-.chart-container {
-    height: 250px;
-    margin: 10px 0;
+.chart-container--big {
+  @include mq {
+    height: 300px;
+  }
 }
 
 .chart-container--small {
-    height: 130px;
+  height: 150px;
+  width: 100%;
+  @include mq {
+    height: 250px;
+  }
 }
 
 .social__list {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    @include mq {
+      flex-direction: row;
+      align-items: center;
+    }
     justify-content: space-between;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -38,14 +47,25 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    height: 120px;
     border: 1px solid #d1d1d1;
     border-radius: 5px;
-    height: 80px;
     background-color: $alabaster;
     padding: 10px 25px;
+    & + & {
+      margin-top: 20px;
+    }
+    @include mq {
+      max-width: 330px;
+      align-items: center;
+      & + & {
+        margin-top: 0;
+      }
+    }
 }
 
 .social-media__name {
+    font-size: 20px;
     margin: 0;
     font-weight: bold;
     color: $ship-cove ;
@@ -53,7 +73,7 @@
 
 .social-media__number {
     margin: 0;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: lighter;
     color: $dove-gray;
 }
@@ -68,7 +88,7 @@
       display: flex;
       flex-direction: row;
       align-items: center;
-      padding: 10px 0;
+      padding: 15px 0;
       border-bottom: 1px solid #d1d1d1;
       &:first-child {
         padding-top: 0;
@@ -99,6 +119,10 @@
       font-weight: lighter;
     }
   }
+
+  .user__data-aux {
+    margin: 0;
+  }
   
 
 /*-----------------------------
@@ -120,7 +144,7 @@ SETTINGS
     flex-direction: row;
     flex: 1;
     align-items: center; 
-    margin: 10px 0; 
+    margin: 17px 0; 
 }
 
 .setting-option__text {

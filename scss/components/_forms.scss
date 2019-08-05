@@ -4,7 +4,8 @@
     height: 40px;
     width: 95%;
     background-color: $white;
-    padding: 10px; 
+    padding: 10px;
+    margin: 0 20px;
     @include mq {
         width: 55%;
     }
@@ -38,4 +39,25 @@
     padding: 10px;
     margin-bottom: 20px;
     width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: red;
+    transition: 0.5s;
+}
+
+input:focus, 
+textarea:focus,
+select:focus {
+    outline: none;
+    border: 2px solid $ship-cove ;
+    transition: 0.3s;
+    background-color: #fff;
 }

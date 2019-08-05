@@ -20,13 +20,16 @@
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        margin: 0;
+        align-items: center;
+        margin: 7px 0 0 0;
         @include mq {
             flex-direction: column;
         }
     }
     &__item {
-        margin-bottom: 25px;
+        @include mq {
+            margin-bottom: 25px;
+        }
     }
     &__link {
         opacity: .5;

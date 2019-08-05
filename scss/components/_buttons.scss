@@ -4,9 +4,7 @@
     align-items: center;
     background-color: $ship-cove;
     border-radius: 5px;
-    margin: 20px auto 0 auto;
-    width: 96%;
-    height: 60px;
+    margin: 10px 20px;
     padding: 0 15px;
     @include mq {
         height: 40px;
@@ -14,35 +12,43 @@
 }
 
 .button--send {
-    height: 50px;
     border-radius: 5px;
     border: none;
     background-color: $ship-cove;
     color: $white;
     font-weight: $font-weight--regular;
     margin-top: auto;
-    flex: 1;
+    padding: 15px 0;
+    width: 100%;
 }
 
 .button--save {
-    flex: 1;
-    margin-right: 10px;
-    height: 50px;
     border-radius: 5px;
     border: none;
     background-color: $ship-cove;
     color: $white;
     font-weight: $font-weight--regular;
     margin-top: auto;
+    padding: 15px 0;
+    width: 100%;
+    @include mq {
+        margin-right: 10px;
+        width: 48%; 
+    }
 }
 
 .button--cancel {
-    flex: 1;
     height: 50px;
     border-radius: 5px;
     border: none;
     background-color: $silver-chalice;
     color: $white;
     font-weight: $font-weight--regular;
-    margin-top: auto;
+    margin-top: 20px;
+    padding: 15px 0;
+    width: 100%;
+    @include mq {
+        margin-top: 0;
+        width: 48%;
+    }
 }
